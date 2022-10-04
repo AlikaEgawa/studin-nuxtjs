@@ -2,6 +2,10 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  router: {
+    middleware: 'middlewareCheck'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'studin-nuxtjs',
@@ -25,6 +29,12 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  // components: {
+  //   dirs: [
+  //     '~/components',
+  //     '~/components/base'
+  //   ]
+  // },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
